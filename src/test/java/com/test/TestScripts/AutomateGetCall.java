@@ -23,6 +23,27 @@ public class AutomateGetCall {
 	
 	}
 	
+	
+	//We can also rite above method in below mentioned format
+	@Test
+	public void getWeatherDetail2()
+	{
+		RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city/";
+		RestAssured.basePath = "Delhi";
+		
+		given()
+		
+		.when()
+				.get()
+		
+		.then()
+		
+			.assertThat()
+			.statusCode(200).and()
+			.header("Content-Type", "application/json").and()
+			.body("City", equalTo("Delhi"));
+	}
+	
 
 
 }
