@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.TestScripts.AutomateGetCall">
+      <class name="com.test.TestScripts.ExtractDataFromResponse">
         <methods>
-          <include name="getWeatherDetail"/>
+          <include name="extractresponseData"/>
         </methods>
-      </class> <!-- com.test.TestScripts.AutomateGetCall -->
+      </class> <!-- com.test.TestScripts.ExtractDataFromResponse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
